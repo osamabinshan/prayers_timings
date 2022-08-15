@@ -6,7 +6,7 @@ function prayerTimes() {
     console.log('userCountry ',userCountry);
     
 
-    axios.get(`http://api.aladhan.com/v1/timingsByCity?city=${userCity}&country=${userCountry}&method=8`)
+    axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${userCity}&country=${userCountry}&method=8`)
     .then(function (response) {
         console.log(response.data.data.timings);
         console.log('Fajr',response.data.data.timings.Fajr);
